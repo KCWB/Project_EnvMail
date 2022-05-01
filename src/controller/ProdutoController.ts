@@ -8,7 +8,7 @@ export class ProdutoController{
     cadastrar(request : Request, response : Response){
         const produto: Produto = request.body
         produtoRepository.create(produto)
-        response.status(201).json({message: "produto cadastrado", data: produto});
+        response.status(201).json({message: "Project_Env: produto cadastrado", data: produto});
     }
 }
     
